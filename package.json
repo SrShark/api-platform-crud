@@ -4,7 +4,7 @@
   "description": "una plataforma CRUD utilizando Express - PUG - Mysql con Sequelize.js - Passport.js y JWT.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "babel-node server.js"
   },
   "author": "https://github.com/SrShark",
   "license": "MIT",
