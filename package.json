@@ -1,0 +1,15 @@
+{
+  "name": "api-platform-crud",
+  "version": "1.0.0",
+  "description": "una plataforma CRUD utilizando Express - PUG - Mysql con Sequelize.js - Passport.js y JWT.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "https://github.com/SrShark",
+  "license": "MIT",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
