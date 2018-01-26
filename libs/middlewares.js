@@ -1,8 +1,9 @@
 'use strict'
 
 module.exports = app => {
+  // Establece el puerto como variable de express
   app.set('port', process.env.PORT || 3000)
 
-  // Configura la visualización del JSON en 4 espacios.
-  app.set('json spaces', 4)
+  // Establece el motor de template pug.
+  app.set('view engine', 'pug');
 }
