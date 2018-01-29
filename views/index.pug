@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  section.header
+    header
+      nav.menu
+        a(href= locals.link).btn_pokedex
+          if locals.volver
+            i.material-icons #{locals.volver}
+            span.padding_right #{locals.text}
+          else
+            span.padding_left #{locals.text}
+            i.material-icons #{locals.ir}
