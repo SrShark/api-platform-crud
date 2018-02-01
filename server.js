@@ -7,7 +7,8 @@ const app = express()
 
 // Modularización
 consign()
-  .include('models')
+  .include('db')
+  .then('models')
   .then('libs/middlewares.js')
   .then('routes')
   .then('libs/boot.js')
