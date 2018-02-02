@@ -29,15 +29,12 @@ module.exports = (sequelize, DataType) => {
       validate: {
         notEmpty: true
       }
-    },
-    {
-      classMethods: {
-        associate: (models) => {
-          Usuarios.hasMany(models.Tareas)
-        }
-      }
     }
-
-    return Usuarios
   })
+
+  Usuarios.associate = function (models) {
+    Usuarios.hasMany(models.Tareas)
+  }
+
+  return Usuarios
 }

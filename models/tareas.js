@@ -19,15 +19,12 @@ module.exports = (sequelize, DataType) => {
       type: DataType.BOOLEAN,
       allowNull: false,
       defaultValue: false
-    },
-    {
-      classMethods: {
-        associate: (models) => {
-          Tareas.belongsTo(models.Usuarios)
-        }
-      }
     }
-
-    return Tareas
   })
+
+  Tareas.associate = function (models) {
+    Tareas.belongsTo(models.Usuarios)
+  }
+
+  return Tareas
 }
