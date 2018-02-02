@@ -1,7 +1,7 @@
 'use strict'
 
 module.exports = app => {
-  app.get('/tareas', (req, res) => {
+  app.get('/api/tareas', (req, res) => {
     res.json({success: 'tareas'})
   })
 }
