@@ -1,3 +1,20 @@
+CREATE DATABASE pokedex;
+
+USE pokedex;
+
+CREATE TABLE  pokemons  (
+   id int(11) NOT NULL AUTO_INCREMENT,
+   num_pokedex int(11) NOT NULL UNIQUE,
+   name varchar(50) NOT NULL,
+   description text,
+   type varchar(50) NOT NULL,
+   url varchar(255) NOT NULL,
+   createdAt datetime NOT NULL,
+   updatedAt datetime NOT NULL,
+   UsuarioId int(11) DEFAULT NULL,
+  PRIMARY KEY ( id )
+)
+
 INSERT INTO usuarios (nombre, password, email, createdAt, updatedAt)
   VALUES ('guido', '123', 'cavallo.guido.nicolas@gmail.com', '2018-02-02 12:17:00', '2018-02-02 12:17:00');
 

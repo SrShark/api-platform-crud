@@ -5,5 +5,5 @@ module.exports = app => {
   app.set('port', process.env.PORT || 3000)
 
   // Establece el motor de template pug.
-  app.set('view engine', 'pug');
+  app.set('view engine', 'pug')
 }

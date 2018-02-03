@@ -1,7 +1,6 @@
 'use strict'
 
 module.exports = app => {
-
   // Router
   app.get('/pokedex', (req, res) => {
     const Pokemons = app.db.models.Pokemons

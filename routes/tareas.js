@@ -6,7 +6,7 @@ module.exports = app => {
   app.get('/api/tareas', (req, res) => {
     Tareas.findAll({})
       .then(tareas => {
-        res.json({tareas})
+        res.json({ tareas })
       })
   })
 }
