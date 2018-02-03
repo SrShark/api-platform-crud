@@ -8,48 +8,48 @@ html(lang="es")
     title= locals.titulo
     link(rel="stylesheet", type="text/css", href="https://fonts.googleapis.com/css?family=Work+Sans")
     link(rel="stylesheet", type="text/css", href="https://fonts.googleapis.com/icon?family=Material+Icons")
-      
+
     //- estilos
     .
       <style>
         @import url('');
-        
+
         *, figure{
           box-sizing: border-box;
           margin: 0;
           padding: 0;
         }
-        
+
         body{
           font-family: 'Work Sans', sans-serif;
           font-size: 14px;
           color: #607D8B;
         }
-        
+
         a{
           text-decoration: none;
         }
-        
+
         li {
           list-style: none;
         }
-        
+
         @keyframes jump {
           0% {top: 0px}
           50% {top: -5px}
           100% {top: 0px}
         }
-        
+
         .container {
           display: flex;
           justify-content: center;
           background-color: #fafafa;
         }
-        
+
         .bg {
           background-image: url(https://assets.pokemon.com/static2/_ui/img/chrome/container_bg.png);
         }
-        
+
         .header {
           display: flex;
           justify-content: center;
@@ -70,7 +70,7 @@ html(lang="es")
           align-items: center;
           flex-grow: 0;
         }
-        
+
         .pokedex {
           display: flex;
           flex-wrap: wrap;
@@ -78,7 +78,7 @@ html(lang="es")
           width: 1200px;
           padding: 2rem 2rem;
         }
-        
+
         .pokemon {
           width: 300px;
           position: relative;
@@ -88,12 +88,12 @@ html(lang="es")
           padding: 10px;
           margin: 1rem;
         }
-        
+
         .pokemon:hover {
           animation-name: jump;
           animation-duration: .2s;
         }
-        
+
         .pic {
           display: flex;
           justify-content: center;
@@ -105,23 +105,23 @@ html(lang="es")
           overflow: hidden;
           cursor: pointer;
         }
-        
+
         .pic > img { 
           width: 100%;
         }
-        
+
         .name {
           margin-bottom: 1rem;
           font-weight: bold;
           font-size: 1.5rem;
         }
-        
+
         .description {
           height: 3rem;
           margin-bottom: 1rem;
           overflow: hidden;
         }
-        
+
         .type {
           background-color: #607D8B;
           color: white;
@@ -132,26 +132,26 @@ html(lang="es")
           font-size: 12px;
           text-transform: uppercase;
         }
-        
+
         .attributes {
           display: flex;
           justify-content: space-between;
         }
-        
+
         .id {
           display: block;
           text-align: right;
           color: #E0E0E0;
         }
-        
+
         .padding_right {
           padding-right: .5rem;
         }
-        
+
         .padding_left {
           padding-left: .5rem;
         }
       </style>
-      
+
   body
     block content
